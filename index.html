@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Paola Miramontes" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <!--HEADER-->
+    <div class="container">
+      <header class="menu my-5">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="nav-brand" href="#">
+              <img
+                src="recursos/Imagenes/logo-bookmark.svg"
+                alt="logo"
+                height="30"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-danger ml-3 px-5 shadow-sm text-white" type="button">
+                    LOGIN
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbarOverlay = document.createElement('div');
+    navbarOverlay.classList.add('navbar-overlay');
+    document.body.appendChild(navbarOverlay);
+
+    navbarToggler.addEventListener('click', function() {
+      if (navbarToggler.getAttribute('aria-expanded') === 'false') {
+        navbarOverlay.style.display = 'block';
+      } else {
+        navbarOverlay.style.display = 'none';
+      }
+    });
+
+    navbarOverlay.addEventListener('click', function() {
+      document.querySelector('.navbar-toggler').click();
+      navbarOverlay.style.display = 'none';
+    });
+  });
+    </script>
+
+    <!--BOOKMARK MANCHA AZUL DERECHA-->
+    <div class="container my-5 bluesh">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6 text-center text-lg-left">
+          <h1 class="">A simple Bookmark<br />manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite<br />websites.
+            Open a new browser tab and see your sites load<br />instantly. Try
+            it for free.
+          </p>
+          <div class="d-grid gap-2 d-md-block d-flex justify-content-center">
+            <button class="btn btn-primary shadow-sm" type="button">
+              Get in on Chrome
+            </button>
+            <button class="btn btn-light shadow-sm" type="button">
+              Get in on Firefox
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 my-5 order-1 order-md-2 position-relative img-hero">
+          <img src="recursos/Imagenes/illustration-hero.svg" alt="Imagen1" />
+        </div>
+        <div class="blue-right-shadow mt-5 d-none d-md-block"></div>
+      </div>
+    </div>
+
+    <!--FEATURES CON TAB-->
+
+    <div class="container my-5">
+        <div class="row text-center">
+          <h1>Features</h1>
+          <p>
+            Our aim is to make it quick and easy for you to access your<br />favourite
+            websites. Your bookmarks sync between your devices<br />so you can
+            access them on the go
+          </p>
+          <div class="container mb-5">
+            <ul class="nav nav-underline justify-content-center flex-column flex-md-row">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bookmarking">Simple Bookmarking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#searching">Speedy Searching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sharing">Easy Sharing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--BOOKMARK CON MANCHA AZUL IZQUIERDA-->
+      <div id="searching" class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mb-5 position-relative img-features d-flex justify-content-center justify-content-md-start">
+            <img
+              src="recursos/Imagenes/illustration-features-tab-1.svg"
+              alt="Imagen2"
+            />
+          </div>
+            <div class="blue-right-shadow1 d-none d-md-block"></div>
+            <div class="col-sm-12 col-md-6 text-center text-md-left mb-5">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmarks however you like. Our<br />simple
+              drag-and-drop interface gives you complete<br />control over how you
+              manage your favourite sites.
+            </p>
+            <p>
+              <a class="btn btn-primary shadow-sm" href="#" role="button"
+                >More info</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+<!--INSTALAR CHROME, FIREFOX, OPERA-->
+<div id="sharing" class="container my-10 text-center text-md-left mt-5">
+    <div class="row staggered mb-5">
+      <h1 class="mb-3">Download the extension</h1>
+      <p class="mb-5">
+        We've got more browsers in the pipeline. Please do let us know if<br />
+        you've got a favourite you'd like us to prioritize.
+      </p>
+      <div class="card-group">
+        <div class="col-sm-12 col-md-4 mb-5 d-flex card-wrapper">
+          <div class="card shadow mb-5" style="width: 19rem">
+            <div class="card-body">
+              <img
+                src="recursos/Imagenes/logo-chrome.svg"
+                alt="imagen-chrome"
+              />
+              <h5 class="card-title">Add to Chrome</h5>
+              <p class="card-text">Minimun version 62</p>
+              <img src="recursos/Imagenes/bg-dots.svg" alt="puntos" />
+              <a href="n" class="btn btn-primary mt-4 shadow-sm"
+                >Add & Install Extension</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper col-sm-12 col-md-4 mb-5 d-flex">
+          <div class="card shadow mb-5" style="width: 19rem">
+            <div class="card-body">
+              <img
+                src="recursos/Imagenes/logo-firefox.svg"
+                alt="imagen-firefox"
+              />
+              <h5 class="card-title">Add to Firefox</h5>
+              <p class="card-text">Minimun version 55</p>
+              <img src="recursos/Imagenes/bg-dots.svg" alt="puntos" />
+              <a href="n" class="btn btn-primary mt-4 shadow-sm"
+                >Add & Install Extension</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper col-sm-12 col-md-4 mb-5 d-flex">
+          <div class="card shadow mb-5" style="width: 19rem">
+            <div class="card-body">
+              <img
+                src="recursos/Imagenes/logo-opera.svg"
+                alt="imagen-opera"
+              />
+              <h5 class="card-title">Add to Opera</h5>
+              <p class="card-text">Minimun version 46</p>
+              <img src="recursos/Imagenes/bg-dots.svg" alt="puntos" />
+              <a href="n" class="btn btn-primary mt-4 shadow-sm"
+                >Add & Install Extension</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--FAQs-->
+   <div class="container my-10">
+    <div class="row text-center mb-5">
+      <h1 class="mb-3">Frequently Asked Questions</h1>
+      <p class="mb-5">
+        Here are some of our FAQs. If you have any other questions<br />you'd
+        like answered please feel free to email us.
+      </p>
+      <div class="accordion accordion-flush mb-5" id="accordionFAQs">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              What is Bookmark?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushFAQs"
+          >
+            <div class="accordion-body" style="text-align: justify;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus eros quis dictum pulvinar. Etiam sit amet diam et eros feugiat ullamcorper.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              How can I request a new browser?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushFAQs"
+          >
+            <div class="accordion-body" style="text-align: justify;">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Is there a mobile app?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushFAQs"
+          >
+            <div class="accordion-body" style="text-align: justify;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce luctus eros quis dictum pulvinar. Etiam sit amet
+              diam et eros feugiat ullamcorper. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushFAQs"
+          >
+            <div class="accordion-body" style="text-align: justify;">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Expedita odit natus quisquam suscipit quasi laborum, esse
+              alias enim beatae dolorem, quas, molestias excepturi
+              adipisci facere deleniti. Iure illum exercitationem aut!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="button" class="btn btn-primary shadow-sm">
+          More info
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--CONTACT US-->
+  <div class="container-fluid bg-primary py-5">
+    <div class="row text-center">
+      <h6 class="text-white mb-4" style="letter-spacing: 0.5ch;">35.000 + ALREADY JOINED</h6>
+      <h4 class="mb-4 text-white">Stay up-to-date with what<br />we're doing</h4>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="form-container">
+          <form class="d-flex gap-2 align-items-center needs-validation mx-auto" novalidate>
+            <input
+              type="email"
+              class="form px-3 py-1"
+              id="email-address"
+              placeholder="Enter your email address"
+              required
+            />
+            <div class="valid-feedback">E-mail correct!</div>
+            <div class="invalid-feedback">
+              Whoops, make sure it's an email.
+            </div>
+            <button type="submit" class="btn btn-danger text-white shadow-sm w-auto">
+              Contact Us
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="container-fluid" style="background-color: #0a176c;">
+    <div class="container py-2">
+      <div class="row text-lg-start">
+        <footer>
+          <nav class="navbar navbar-expand-lg justify-content-sm-center">
+            <a class="navbar-brand mb-3 mb-lg-0" href="#">
+              <img src="recursos/Imagenes/logo-bookmark-white.png" alt="logo" height="30" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarFooter">
+              <ul class="navbar-nav flex-column flex-lg-row w-100 align-items-sm-center">
+                <li class="nav-item ms-lg-5">
+                  <a class="nav-link text-white" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <div class="d-flex mt-3 mt-lg-0 ms-lg-auto py-2 align-items-sm-center">
+                <a class="navbar-brand me-5" href="#">
+                  <img src="recursos/Imagenes/icon-facebook.svg" alt="facebook" height="30" />
+                </a>
+                <a class="navbar-brand" href="#">
+                  <img src="recursos/Imagenes/icon-twitter.svg" alt="twitter" height="30" />
+                </a>
+              </div>
+            </div>
+          </nav>
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/"></script>
+  <script src="main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
