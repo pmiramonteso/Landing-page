@@ -1,9 +1,9 @@
-$primary: #5265E1;
-$danger: #FA5959;
+$primary: #5265e1;
+$secundary: #fa5959;
 
 $theme-colors: (
   "primary": $primary,
-  "danger": $danger
+  "secundary": $secundary,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -12,309 +12,292 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/functions";
 
 h1 {
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-  }
-
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
 p {
-    color: grey;
-    margin-bottom: 2rem;
+  color: grey;
+  margin-bottom: 2rem;
 }
-
-  .navbar-nav .nav-item {
-      margin-right: 2rem;
-    }
-  
-.navbar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1040;
-  display: none;
+.row p {
+  max-width: 450px;
 }
-
-.navbar-collapse.show + .navbar-overlay {
-  display: block;
+.text-white {
+  color: white;
 }
-
-.navbar-nav .btn {
-  margin-left: 0;
-  width: 100%;
+.modal-content {
+  background-color: #021a49;
 }
-
-  .blue-right-shadow {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    top: 5;
-    width: 40%;
-    height: 55%;
-    background:#5265E1;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 40%; 
+.logo-white {
+  display: flex;
+  justify-content: flex-start;
+  filter: invert(1) brightness(100) grayscale(0) sepia(0);
 }
-
+.btn-primary:hover {
+  background-color: white;
+  border-color: $primary;
+  color: $primary;
+}
+.btn-secundary:hover {
+  background-color: white;
+  border-color: $secundary;
+  color: $secundary !important;
+}
+.modal-body .btn-log {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+  //MANCHA DER
+.btn-light:hover {
+  background-color: white;
+  border-color: gray;
+  color: gray;
+}
+.blue-right-shadow {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 40%;
+  height: 55%;
+  background: $primary;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+}
 .img-hero {
   position: relative;
   overflow: hidden;
 }
-
 .img-hero img {
   position: relative;
   display: block;
   width: 100%;
   height: auto;
 }
-
+//MANCHA IZQ
+.navbar-nav .nav-link:hover {
+  color: $secundary;
+}
 .nav-underline {
-    margin-top: 1rem;
-    align-items: center;
-    
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  align-items: center;
 }
 .nav-underline .nav-link {
-    color: rgb(34, 32, 32);
-    border-bottom: 2px solid transparent;
-  }
-  
-  .nav-underline .nav-link.active,
-  .nav-underline .nav-link:focus {
-    border-bottom: 2px solid red;
-  }
-
+  color: rgb(34, 32, 32);
+  border-bottom: 2px solid transparent;
+}
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:focus {
+  border-bottom: 2px solid $secundary;
+}
+.tab-content .tab-pane {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem
+}
 .blue-right-shadow1 {
-    position: absolute;
-    z-index: -1;
-    margin-top: 5rem;
-    left: 0;
-    top: 1;
-    width: 40%;
-    height: 50%;
-    background:#5265E1;
-    border-top-right-radius: 40%;
-    border-bottom-right-radius: 40%; 
+  position: absolute;
+  z-index: -1;
+  margin-top: 5rem;
+  left: 0;
+  top: 1;
+  width: 40%;
+  height: 50%;
+  background: $primary;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
 }
-
 .img-features {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
-
 .img-features img {
-    position: relative;
-    display: block;
-    width: 80%;
-    height: auto;
+  position: relative;
+  display: block;
+  width: 80%;
+  height: auto;
 }
-
+.nav-link:hover {
+  color: $secundary;
+}
+//CARDS
 .card-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
 }
-
 .card-wrapper {
   display: flex;
   align-items: center;
   position: relative;
   justify-content: center;
 }
-
 .card-wrapper:nth-child(1) {
   margin-top: 0;
 }
-
 .card-wrapper:nth-child(2) {
   margin-top: 2rem;
 }
-
 .card-wrapper:nth-child(3) {
   margin-top: 4rem;
 }
+//ACCORDION
+.accordion {
+  max-width: 50%;
+  margin: 0 auto;
+}
 
-  .accordion {
-    max-width: 50%;
-    margin: 0 auto;
+.accordion-body {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+.accordion-item {
+  margin-bottom: 0.5rem;
+}
+.accordion-button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+//CONTACTUS
+.form-container {
+  position: relative;
+}
+.form-group {
+  position: relative;
+}
+.form-control{
+  width: 100%; 
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-sizing: border-box; 
+}
+.validation-message {
+  background-color: white;
+  color: $secundary;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem; 
+  padding: 0.5;
+  border: 0.5;
+  display: none; 
+  position: absolute; 
   }
-
-  .accordion-button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .accordion-body {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .accordion-item {
-    margin-bottom: 0.5rem; 
-  }
-
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    overflow: visible;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-left: 1.5rem;
-  }
-  
-  .d-flex {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  .d-flex a {
-    margin: 0.5rem 0;
-  }
-  
-  @media (min-width: 993px) {
-  
-
+input:focus:invalid ~ .invalid-feedback,
+input:focus:valid ~ .valid-feedback {
+  display: none;
+}
+input:focus ~ .invalid-feedback,
+input:focus ~ .valid-feedback {
+  display: none;
+}
+//FOOTER
+.navbar-nav .nav-link:hover {
+  color: $secundary;
+}
+.social .navbar-brand img:hover {
+  filter: invert(30%) sepia(100%) saturate(5000%) hue-rotate(-30deg) brightness(100%) contrast(100%);
+}
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+.footer-nav .nav-link:hover {
+  color: #f8f9fa;
+}
+.social img {
+  height: 30px;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-
+//HEADER
+.common-modal-styles {
+  .modal-backdrop.show {
+    opacity: 0.7; 
+  }
+  .modal-header-content {
+    margin-bottom: 1rem;
+  }
+  .modal-body .nav-link {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  .modal-footer {
+    margin-top: auto; 
+  }
+  .navbar-brand img {
+    margin: 0 0.5rem; 
+  }
+ }
+ //CARDS
+  .card-wrapper {
+    flex: 0 0 auto;
+  }
+//MANCHA DER
   .blue-right-shadow {
+    width: 40%;
     height: 35%;
   }
-    .img-hero img {
-      width: 100%;
-    }
-    .blue-right-shadow1 {
-      display: none;
-    }
- 
-    .text-md-left {
-        text-align: left;
-      }
-  
-  .card-wrapper {
-    margin: 0 -1rem;
-    margin-bottom: 1.5rem;
+  .img-hero img {
+    width: 100%;
+  }
+//MANCHA IZQ
+  .blue-right-shadow1 {
+    width: 40%;
+    height: 30%;
+    margin-top: 5;
+  }
 }
-
-.card-wrapper:nth-child(1) {
-    margin-top: 0;
-}
-
-.card-wrapper:nth-child(2) {
-    margin-top: 1rem;
-}
-
-.card-wrapper:nth-child(3) {
-    margin-top: 2rem;
-}
-
-.navbar-expand-lg {
-  flex-wrap: wrap;
-}
-
-.navbar-collapse {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center !important;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center !important;
-  margin-top: 1rem;
-}
-
-.navbar-nav .nav-item {
-  margin-bottom: 1rem;
-}
-
-.d-flex {
-  flex-direction: column;
-  align-items: center !important;
-  margin-top: 1rem;
-}
-
-.d-flex a {
-  margin: 0.5rem 0;
-}
-  
-}
-
 @media (max-width: 767px) {
 
-  #bookmarking {
-    justify-content: center;
-  }
-
+  //MANCHA DER
   .blue-right-shadow {
-    display: block;
+    top: 70%;
+    height: 50%;
+    width: 80%;
   }
-
+//MANCHA IZQ
   .blue-right-shadow1 {
-    display: none;
+    margin-top: -20%;
+    height: 35%;
+    width: 75%;
+    margin-bottom: 4rem;
   }
-
+  .img-features {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+//CARDS
   .card-wrapper {
     flex: 0 0 100%;
     max-width: 100%;
     margin: 0 auto;
     justify-content: center;
-    
+
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
       margin-top: 0;
     }
   }
+  //ACORDEON
   .accordion {
     max-width: 90%;
     margin: 0 auto;
   }
-
+  //CONTACT US
   .form-control {
     width: 100%;
   }
-
+  .btn-contact{
+    width: 100%;
+  }
+  //FOOTER
   .navbar-expand-lg {
-    flex-wrap: wrap;
-  }
-
-  .navbar-collapse {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center !important;
-  }
-
-  .navbar-nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    text-align: center !important;
-    margin-top: 1rem;
+    align-items: center;
   }
-
-  .navbar-nav .nav-item {
-    margin-bottom: 1rem;
-  }
-
-  .d-flex {
-    flex-direction: column;
-    align-items: center !important;
-    margin-top: 1rem;
-  }
-
-  .d-flex a {
-    margin: 0.5rem 0;
-  }
-    
-  }
+}
