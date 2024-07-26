@@ -74,7 +74,6 @@ p {
   width: 100%;
   height: auto;
 }
-//MANCHA IZQ
 .navbar-nav .nav-link:hover {
   color: $secundary;
 }
@@ -121,7 +120,6 @@ p {
 .nav-link:hover {
   color: $secundary;
 }
-//CARDS
 .card-group {
   display: flex;
   flex-wrap: wrap;
@@ -142,12 +140,10 @@ p {
 .card-wrapper:nth-child(3) {
   margin-top: 4rem;
 }
-//ACCORDION
 .accordion {
   max-width: 50%;
   margin: 0 auto;
 }
-
 .accordion-body {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
@@ -159,7 +155,6 @@ p {
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
-//CONTACTUS
 .form-container {
   position: relative;
 }
@@ -190,7 +185,6 @@ input:focus ~ .invalid-feedback,
 input:focus ~ .valid-feedback {
   display: none;
 }
-//FOOTER
 .navbar-nav .nav-link:hover {
   color: $secundary;
 }
@@ -207,9 +201,7 @@ input:focus ~ .valid-feedback {
 .social img {
   height: 30px;
 }
-
 @media (min-width: 768px) and (max-width: 992px) {
-//HEADER
 .common-modal-styles {
   .modal-backdrop.show {
     opacity: 0.7; 
@@ -231,11 +223,9 @@ input:focus ~ .valid-feedback {
     margin: 0 0.5rem; 
   }
  }
- //CARDS
   .card-wrapper {
     flex: 0 0 auto;
   }
-//MANCHA DER
   .blue-right-shadow {
     width: 40%;
     height: 35%;
@@ -243,7 +233,6 @@ input:focus ~ .valid-feedback {
   .img-hero img {
     width: 100%;
   }
-//MANCHA IZQ
   .blue-right-shadow1 {
     width: 40%;
     height: 30%;
@@ -251,14 +240,11 @@ input:focus ~ .valid-feedback {
   }
 }
 @media (max-width: 767px) {
-
-  //MANCHA DER
   .blue-right-shadow {
     top: 70%;
     height: 50%;
     width: 80%;
   }
-//MANCHA IZQ
   .blue-right-shadow1 {
     margin-top: -20%;
     height: 35%;
@@ -269,7 +255,6 @@ input:focus ~ .valid-feedback {
     justify-content: center;
     margin-bottom: 3rem;
   }
-//CARDS
   .card-wrapper {
     flex: 0 0 100%;
     max-width: 100%;
@@ -282,19 +267,16 @@ input:focus ~ .valid-feedback {
       margin-top: 0;
     }
   }
-  //ACORDEON
   .accordion {
     max-width: 90%;
     margin: 0 auto;
   }
-  //CONTACT US
   .form-control {
     width: 100%;
   }
   .btn-contact{
     width: 100%;
   }
-  //FOOTER
   .navbar-expand-lg {
     display: flex;
     flex-direction: column;
